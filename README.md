@@ -19,3 +19,6 @@ In this session we will:
 3. During the lab, you will be using a Honeydew-owned Snowflake account.
    If you would like to try Honeydew with your own data and semantics,
    you can sign up to a trial account at https://app.honeydew.cloud/signup.
+   The instructions for reproducing the Snowflake data and semantic views in your own account are provided in the #Appendix
+
+## Appendix
