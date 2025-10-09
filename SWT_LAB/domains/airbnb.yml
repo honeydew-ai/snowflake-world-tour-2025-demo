@@ -1,7 +1,11 @@
 type: domain
 name: airbnb
-description: |-
-  Airbnb data for over 210k listings in 13 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews.
+description: >-
+
+  Airbnb data for over 210k listings in 13 major cities, including information
+  about hosts, pricing, location, and room type, along with over 5 million
+  historical reviews.
+
   Reviews are also considered visits / bookings
 labels: []
 filters: []
@@ -99,3 +103,7 @@ entities:
       - name: listing_id
       - name: amenity
       - name: count
+  - name: currency_for_city
+    fields:
+      - name: local_currency_to_eur
+      - name: local_currency_to_usd
