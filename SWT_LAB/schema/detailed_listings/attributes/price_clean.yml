@@ -1,14 +1,17 @@
 type: calculated_attribute
-sql: |-
-  REPLACE(detailed_listings.price, '$', '')
 entity: detailed_listings
 name: price_clean
-description: |-
-  The Price_clean column represents the cleaned and standardized price of a listing, likely removing any unnecessary characters or formatting to provide a numerical value for analysis or comparison.
+description: >-
+
+  The Price_clean column represents the cleaned and standardized price of a
+  listing, likely removing any unnecessary characters or formatting to provide a
+  numerical value for analysis or comparison.
+datatype: float
+sql: |-
+  REPLACE(detailed_listings.price, '$', '')
 metadata:
   - name: honeydew_ai
     metadata:
       - name: synonyms
         value: |-
           clean_price,price_amount,price_figure,price_number,price_value
-datatype: string
