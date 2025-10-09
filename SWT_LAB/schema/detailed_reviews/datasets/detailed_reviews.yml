@@ -1,0 +1,28 @@
+type: dataset
+entity: detailed_reviews
+name: detailed_reviews
+sql: |-
+  SWT_DATA.AIRBNB.DETAILED_REVIEWS
+dataset_type: table
+attributes:
+  - column: ID
+    name: id
+    datatype: number
+  - column: DATE
+    name: date
+    datatype: date
+  - column: REVIEWER_NAME
+    name: reviewer_name
+    datatype: string
+  - column: REVIEWER_ID
+    name: reviewer_id
+    datatype: number
+  - column: LISTING_ID
+    name: listing_id
+    datatype: number
+  - column: COMMENTS
+    name: comments
+    datatype: string
+  - column: LISTING_CITY
+    name: listing_city
+    datatype: string

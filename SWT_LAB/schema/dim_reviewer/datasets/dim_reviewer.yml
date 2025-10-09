@@ -1,0 +1,19 @@
+type: dataset
+entity: dim_reviewer
+name: dim_reviewer
+sql: |-
+  SWT_DATA.AIRBNB.DIM_REVIEWER
+dataset_type: table
+attributes:
+  - column: LAST_REVIEW
+    name: last_review
+    datatype: date
+  - column: FIRST_REVIEW
+    name: first_review
+    datatype: date
+  - column: NUMBER_OF_REVIEWS
+    name: number_of_reviews
+    datatype: number
+  - column: REVIEWER_ID
+    name: reviewer_id
+    datatype: number

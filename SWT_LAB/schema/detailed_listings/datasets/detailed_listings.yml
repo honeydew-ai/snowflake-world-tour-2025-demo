@@ -1,0 +1,394 @@
+type: dataset
+entity: detailed_listings
+name: detailed_listings
+sql: |-
+  SWT_DATA.AIRBNB.DETAILED_LISTINGS
+dataset_type: table
+attributes:
+  - column: PROPERTY_TYPE
+    name: property_type
+    description: |-
+      Self-selected property type (e.g., Apartment, Hotel, B&B)
+    datatype: string
+  - column: HOST_ACCEPTANCE_RATE
+    name: host_acceptance_rate
+    description: |-
+      Rate at which the host accepts booking requests
+    datatype: string
+  - column: AVAILABILITY_EOY
+    name: availability_eoy
+    datatype: number
+  - column: ACCOMMODATES
+    name: accommodates
+    description: |-
+      Maximum number of guests the listing accommodates
+    datatype: number
+  - column: NUMBER_OF_REVIEWS_LY
+    name: number_of_reviews_ly
+    datatype: number
+  - column: HOST_LISTINGS_COUNT
+    name: host_listings_count
+    description: |-
+      Number of listings the host has (Airbnb internal calculation)
+    datatype: number
+  - column: AVAILABILITY_365
+    name: availability_365
+    description: "Availability within 365 days \u2014 booked or blocked days excluded"
+    datatype: number
+  - column: SOURCE
+    name: source
+    description: "Source of scrape: \u201Cneighbourhood search\u201D (found via city\
+      \ search) or \u201Cprevious scrape\u201D (confirmed still available from prior\
+      \ scrape)"
+    datatype: string
+  - column: REVIEW_SCORES_LOCATION
+    name: review_scores_location
+    description: |-
+      Location rating from reviews
+    datatype: number
+  - column: MAXIMUM_MAXIMUM_NIGHTS
+    name: maximum_maximum_nights
+    description: |-
+      Largest maximum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: AVAILABILITY_60
+    name: availability_60
+    description: "Availability within 60 days \u2014 booked or blocked days excluded"
+    datatype: number
+  - column: MINIMUM_MINIMUM_NIGHTS
+    name: minimum_minimum_nights
+    description: |-
+      Smallest minimum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: NEIGHBORHOOD_OVERVIEW
+    name: neighborhood_overview
+    description: |-
+      Host's description of the neighbourhood
+    datatype: string
+  - column: AVAILABILITY_30
+    name: availability_30
+    description: "Availability within 30 days \u2014 booked or blocked days excluded"
+    datatype: number
+  - column: BATHROOMS
+    name: bathrooms
+    description: |-
+      Number of bathrooms in the listing
+    datatype: number
+  - column: ESTIMATED_REVENUE_L365D
+    name: estimated_revenue_l365d
+    datatype: number
+  - column: REVIEW_SCORES_ACCURACY
+    name: review_scores_accuracy
+    description: |-
+      Accuracy rating from reviews
+    datatype: number
+  - column: BATHROOMS_TEXT
+    name: bathrooms_text
+    description: "Textual bathroom description (historical format of \u201Cbathrooms\u201D\
+      )"
+    datatype: string
+  - column: LICENSE
+    name: license
+    description: |-
+      Licence/permit/registration number for the listing
+    datatype: string
+  - column: LAST_SCRAPED
+    name: last_scraped
+    description: |-
+      UTC datetime this listing was scraped
+    datatype: date
+  - column: HOST_VERIFICATIONS
+    name: host_verifications
+    description: |-
+      Verification methods provided for the host
+    datatype: string
+  - column: HOST_RESPONSE_TIME
+    name: host_response_time
+    description: |-
+      Typical response time of the host
+    datatype: string
+  - column: HOST_IS_SUPERHOST
+    name: host_is_superhost
+    description: |-
+      Boolean [t/f] indicating if the host is a Superhost
+    datatype: bool
+  - column: MAXIMUM_MINIMUM_NIGHTS
+    name: maximum_minimum_nights
+    description: |-
+      Largest minimum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: NUMBER_OF_REVIEWS_L30D
+    name: number_of_reviews_l30d
+    description: |-
+      Number of reviews received in the last 30 days
+    datatype: number
+  - column: MINIMUM_NIGHTS
+    name: minimum_nights
+    description: |-
+      Minimum night stay allowed for the listing
+    datatype: number
+  - column: BEDROOMS
+    name: bedrooms
+    description: |-
+      Number of bedrooms in the listing
+    datatype: number
+  - column: FIRST_REVIEW
+    name: first_review
+    description: |-
+      Date of the first (oldest) review
+    datatype: date
+  - column: NUMBER_OF_REVIEWS
+    name: number_of_reviews
+    description: |-
+      Total number of reviews the listing has received
+    datatype: number
+  - column: HOST_PICTURE_URL
+    name: host_picture_url
+    description: |-
+      URL to the host's profile picture
+    datatype: string
+  - column: LATITUDE
+    name: latitude
+    description: |-
+      Latitude coordinate (WGS84)
+    datatype: number
+  - column: ID
+    name: id
+    description: |-
+      Airbnb's unique identifier for the listing
+    datatype: number
+  - column: REVIEW_SCORES_VALUE
+    name: review_scores_value
+    description: |-
+      Value-for-money rating from reviews
+    datatype: number
+  - column: HAS_AVAILABILITY
+    name: has_availability
+    description: |-
+      Boolean [t/f]; whether the listing currently has availability
+    datatype: bool
+  - column: NAME
+    name: name
+    description: |-
+      Name of the listing
+    datatype: string
+  - column: NUMBER_OF_REVIEWS_LTM
+    name: number_of_reviews_ltm
+    description: |-
+      Number of reviews received in the last 12 months
+    datatype: number
+  - column: REVIEW_SCORES_CHECKIN
+    name: review_scores_checkin
+    description: |-
+      Check-in rating from reviews
+    datatype: number
+  - column: AVAILABILITY_90
+    name: availability_90
+    description: "Availability within 90 days \u2014 booked or blocked days excluded"
+    datatype: number
+  - column: LAST_REVIEW
+    name: last_review
+    description: |-
+      Date of the last (most recent) review
+    datatype: date
+  - column: AMENITIES
+    name: amenities
+    description: |-
+      JSON array of listing amenities
+    datatype: string
+  - column: NEIGHBOURHOOD
+    name: neighbourhood
+    description: |-
+      Neighbourhood name of the listing
+    datatype: string
+  - column: MAXIMUM_NIGHTS
+    name: maximum_nights
+    description: |-
+      Maximum night stay allowed for the listing
+    datatype: number
+  - column: HOST_NEIGHBOURHOOD
+    name: host_neighbourhood
+    description: |-
+      Neighbourhood specified by the host
+    datatype: string
+  - column: HOST_URL
+    name: host_url
+    description: |-
+      Airbnb page for the host
+    datatype: string
+  - column: HOST_IDENTITY_VERIFIED
+    name: host_identity_verified
+    description: |-
+      Boolean [t/f]; whether the host's identity has been verified
+    datatype: bool
+  - column: NEIGHBOURHOOD_GROUP_CLEANSED
+    name: neighbourhood_group_cleansed
+    description: |-
+      Neighbourhood group geocoded using latitude/longitude against public shapefiles
+    datatype: string
+  - column: ESTIMATED_OCCUPANCY_L365D
+    name: estimated_occupancy_l365d
+    datatype: number
+  - column: BEDS
+    name: beds
+    description: |-
+      Number of beds in the listing
+    datatype: number
+  - column: CALCULATED_HOST_LISTINGS_COUNT_ENTIRE_HOMES
+    name: calculated_host_listings_count_entire_homes
+    description: |-
+      Number of Entire home/apt listings host has in the current scrape (city/region)
+    datatype: number
+  - column: CALCULATED_HOST_LISTINGS_COUNT_SHARED_ROOMS
+    name: calculated_host_listings_count_shared_rooms
+    description: |-
+      Number of Shared room listings host has in the current scrape (city/region)
+    datatype: number
+  - column: HOST_ABOUT
+    name: host_about
+    description: |-
+      Description written by the host about themselves
+    datatype: string
+  - column: HOST_SINCE
+    name: host_since
+    description: |-
+      Date when the host/user registered on Airbnb
+    datatype: date
+  - column: HOST_THUMBNAIL_URL
+    name: host_thumbnail_url
+    description: |-
+      URL to the host's thumbnail image
+    datatype: string
+  - column: MAXIMUM_NIGHTS_AVG_NTM
+    name: maximum_nights_avg_ntm
+    description: |-
+      Average maximum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: INSTANT_BOOKABLE
+    name: instant_bookable
+    description: |-
+      Boolean [t/f]; whether guests can instantly book without host approval
+    datatype: bool
+  - column: NEIGHBOURHOOD_CLEANSED
+    name: neighbourhood_cleansed
+    description: |-
+      Neighbourhood geocoded using latitude/longitude against public shapefiles
+    datatype: string
+  - column: HOST_HAS_PROFILE_PIC
+    name: host_has_profile_pic
+    description: |-
+      Boolean [t/f]; whether the host has a profile picture
+    datatype: bool
+  - column: PICTURE_URL
+    name: picture_url
+    description: |-
+      URL to the Airbnb hosted regular sized image for the listing
+    datatype: string
+  - column: LISTING_URL
+    name: listing_url
+    description: |-
+      Part of the Inside Airbnb scrape; URL of the listing page
+    datatype: string
+  - column: LONGITUDE
+    name: longitude
+    description: |-
+      Longitude coordinate (WGS84)
+    datatype: number
+  - column: ROOM_TYPE
+    name: room_type
+    description: "Room type: Entire home/apt, Private room, Shared room, or Hotel\
+      \ \u2014 see Airbnb definitions"
+    datatype: string
+  - column: REVIEW_SCORES_COMMUNICATION
+    name: review_scores_communication
+    description: |-
+      Communication rating from reviews
+    datatype: number
+  - column: REVIEWS_PER_MONTH
+    name: reviews_per_month
+    description: |-
+      Average number of reviews per month over the lifetime of the listing
+    datatype: number
+  - column: HOST_ID
+    name: host_id
+    description: |-
+      Airbnb's unique identifier for the host/user
+    datatype: number
+  - column: CALCULATED_HOST_LISTINGS_COUNT_PRIVATE_ROOMS
+    name: calculated_host_listings_count_private_rooms
+    description: |-
+      Number of Private room listings host has in the current scrape (city/region)
+    datatype: number
+  - column: PRICE
+    name: price
+    description: |-
+      "daily price in local currency. NOTE: the $ sign is a technical artifact of the export, please ignore it"
+    datatype: string
+  - column: REVIEW_SCORES_RATING
+    name: review_scores_rating
+    description: |-
+      Overall rating score given by guests
+    datatype: number
+  - column: DESCRIPTION
+    name: description
+    description: |-
+      Detailed description of the listing
+    datatype: string
+  - column: LISTING_CITY
+    name: listing_city
+    datatype: string
+  - column: CALCULATED_HOST_LISTINGS_COUNT
+    name: calculated_host_listings_count
+    description: |-
+      Number of listings the host has in the current scrape (city/region level)
+    datatype: number
+  - column: SCRAPE_ID
+    name: scrape_id
+    description: |-
+      Inside Airbnb scrape identifier
+    datatype: number
+  - column: MINIMUM_MAXIMUM_NIGHTS
+    name: minimum_maximum_nights
+    description: |-
+      Smallest maximum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: HOST_RESPONSE_RATE
+    name: host_response_rate
+    description: |-
+      Host's response rate to guest inquiries
+    datatype: string
+  - column: HOST_NAME
+    name: host_name
+    description: |-
+      Name of the host (usually first name)
+    datatype: string
+  - column: HOST_LOCATION
+    name: host_location
+    description: |-
+      Host's self-reported location
+    datatype: string
+  - column: CALENDAR_LAST_SCRAPED
+    name: calendar_last_scraped
+    description: |-
+      Date the calendar was last scraped
+    datatype: date
+  - column: MINIMUM_NIGHTS_AVG_NTM
+    name: minimum_nights_avg_ntm
+    description: |-
+      Average minimum_nights value from the calendar (next 365 days)
+    datatype: number
+  - column: CALENDAR_UPDATED
+    name: calendar_updated
+    description: |-
+      Date the calendar was last updated
+    datatype: string
+  - column: REVIEW_SCORES_CLEANLINESS
+    name: review_scores_cleanliness
+    description: |-
+      Cleanliness rating from reviews
+    datatype: number
+  - column: HOST_TOTAL_LISTINGS_COUNT
+    name: host_total_listings_count
+    description: |-
+      Total number of listings the host has (Airbnb internal calculation)
+    datatype: number
