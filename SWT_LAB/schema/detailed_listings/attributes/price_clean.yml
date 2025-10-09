@@ -8,7 +8,7 @@ description: >-
   numerical value for analysis or comparison.
 datatype: float
 sql: |-
-  TO_DOUBLE(REPLACE(detailed_listings.price, '$', ''))
+  TO_DOUBLE(REPLACE(REPLACE(detailed_listings.price, '$', ''), ',', ''))
 metadata:
   - name: honeydew_ai
     metadata:
