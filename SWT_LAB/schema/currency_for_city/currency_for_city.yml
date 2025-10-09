@@ -1,0 +1,5 @@
+type: entity
+name: currency_for_city
+keys:
+  - city
+key_dataset: currency_for_city

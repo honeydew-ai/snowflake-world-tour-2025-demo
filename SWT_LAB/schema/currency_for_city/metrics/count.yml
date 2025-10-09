@@ -1,0 +1,9 @@
+type: metric
+sql: |-
+  COUNT(*)
+entity: currency_for_city
+name: count
+description: |-
+  Auto-generated Metric: count of records in the entity
+datatype: number
+rollup: sum
