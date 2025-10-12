@@ -80,6 +80,9 @@ Note: either follow the following instructions or create these in **Playground**
 
 1. Explore the description of the domain. It can be used to provide additional guidelines to the ai.
    You can later on experiment by changing it and seeing how that affects the AI answers.
+
+Here's a short demo video to help you navigate through the steps:
+[short demo video](https://github.com/user-attachments/assets/8435dee5-deef-4172-b8c8-d0a541fde55a)
    
 ## Deep Analysis
 
