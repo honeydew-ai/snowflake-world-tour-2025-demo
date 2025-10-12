@@ -56,6 +56,8 @@ You can use the **Playground** section to explore the data.
 
 Note: either follow the following instructions or create these in **Playground**, and then using the **Add to Entity** option.
 
+If you are lost at any point, here's a [short demo video](https://github.com/user-attachments/assets/8435dee5-deef-4172-b8c8-d0a541fde55a) to help you navigate through the steps.
+
 1. Go to the `detailed_reviews` entity, add an **Attribute** named `review_month`, of type `date`
    with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`, and add it.
 
@@ -80,9 +82,6 @@ Note: either follow the following instructions or create these in **Playground**
 
 1. Explore the description of the domain. It can be used to provide additional guidelines to the ai.
    You can later on experiment by changing it and seeing how that affects the AI answers.
-
-Here's a short demo video to help you navigate through the steps:
-[short demo video](https://github.com/user-attachments/assets/8435dee5-deef-4172-b8c8-d0a541fde55a)
    
 ## Deep Analysis
 
