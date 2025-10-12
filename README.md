@@ -85,9 +85,9 @@ Note: either follow the following instructions or create these in **Playground**
 1. **Important**: Use the selector on top, to choose the Airbnb domain, before you start to ask questions.
 1. In the questions box, type in your question. You can ask follow-up questions as part of the conversation.
 
-### Questions flow
+### Questions flow (recommended)
 
-1. What is the monthly number of reviews in the last 7 years?
+1. What is the average monthly number of reviews during the last 7 years?
 2. Was there any anomaly? Can you explain it?
 3. Can you focus on 2020-2022 and break it down by cities?
 4. Can you explain why certain cities were impacted more than others?
