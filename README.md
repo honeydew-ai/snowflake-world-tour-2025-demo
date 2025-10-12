@@ -19,6 +19,28 @@ In this session we will:
 3. During the lab, you will be using a Honeydew-owned Snowflake account.
    If you would like to try Honeydew with your own data and semantics,
    you can sign up to a trial account at https://app.honeydew.cloud/signup.
-   The instructions for reproducing the Snowflake data and semantic views in your own account are provided in the #Appendix
 
-## Appendix
+## Semantic modeling flow
+
+1. Add a month
+
+## Analysis
+
+1. What is the monthly number of reviews in the last 5 years?
+2. Was there any anomaly? Can you explain it?
+3. Can you focus on 2020-2022 and break it down by cities?
+4. Can you explain why certain cities were impacted more than others?
+5. Were there any specific segments of listings that were impacted more than others?
+
+
+## Additional Sample questions
+
+1. Do superhosts get higher rating? Does it change per city?
+2. Are superhosts more successful, and why?
+3. Which cities are more popular for familites
+4. Which cities are affected and unaffected by seasonality
+ 
+
+## Resources
+
+During the session you can use the [Honeydew Documentation](https://honeydew.ai/docs/introduction)
