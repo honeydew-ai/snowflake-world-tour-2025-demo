@@ -25,7 +25,7 @@ In this session we will:
 1. Add the semantic view `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO.AIRBNB`
 
 1. Add a `month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`
-2. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (detailed_reviews.month)`
+2. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.month)`
 3. Add an `avg_reviews_by_month` metric of type `number` to the `detailed_reviews` entity, with the definition `AVG(detailed_reviews.reviews_by_month`
 4. Go to the `airbnb` domain and add the newly created `month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
