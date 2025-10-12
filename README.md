@@ -20,6 +20,10 @@ In this session we will:
    If you would like to try Honeydew with your own data and semantics,
    you can sign up to a trial account at https://app.honeydew.cloud/signup.
 
+## About the data
+
+1. We are analyzing a schema of Airbnb listings and reviews. The full data is available until end of June 2025.
+
 ## Semantic modeling flow
 
 1. Add the semantic view `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO.AIRBNB`
