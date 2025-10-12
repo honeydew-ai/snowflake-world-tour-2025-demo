@@ -45,19 +45,23 @@ In this session we will:
 5. What values do certain fields have? How can we slice and dice the data?
 
 You can use the **Playground** section to explore the data.
+
 <img width="181" height="254" alt="image" src="https://github.com/user-attachments/assets/e25155b3-c59f-4435-bcde-6d9848449683" />
+
 
 ### Create additional semantic definitions
 
 You can start by creating these in **Playground**, and then using the **Add to Entity** option.
 
-1. Add a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
+1. CreateAdd a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
 1. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.month)`.
 1. Add an `avg_reviews_by_month` metric of type `number` to the `detailed_reviews` entity, with the definition `AVG(detailed_reviews.reviews_by_month`.
 1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description`: `Use this metric whenever asked about average reviews per month`
-1. Go to the `airbnb` domain and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
+1. Go to the `Domains` section, edit the `airbnb` domain and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
 ## Analysis
+
+**Important**: Use the selector on top, to choose the Airbnb domain, before you start to ask questions.
 
 1. What is the monthly number of reviews in the last 7 years?
 2. Was there any anomaly? Can you explain it?
