@@ -45,6 +45,7 @@ In this session we will:
 5. What values do certain fields have? How can we slice and dice the data?
 
 You can use the **Playground** section to explore the data.
+<img width="181" height="254" alt="image" src="https://github.com/user-attachments/assets/e25155b3-c59f-4435-bcde-6d9848449683" />
 
 ### Create additional semantic definitions
 
