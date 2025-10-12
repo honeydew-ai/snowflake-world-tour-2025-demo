@@ -22,7 +22,8 @@ In this session we will:
 
 ## About the data
 
-1. We are analyzing a schema of Airbnb listings and reviews. The full data is available until end of June 2025.
+1. We are analyzing a schema of Airbnb listings and reviews.
+2. The full data is available until end of June 2025.
 
 ## Semantic modeling flow
 
@@ -51,7 +52,7 @@ You can use the **Playground** section to explore the data.
 
 ### Create additional semantic definitions
 
-You can start by creating these in **Playground**, and then using the **Add to Entity** option.
+Note: either follow the following instructions or create these in **Playground**, and then using the **Add to Entity** option.
 
 1. Go to the `detailed_reviews` entity, add an **Attribute** named `review_month`, of type `date`
    with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`, and add it.
