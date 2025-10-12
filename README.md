@@ -53,10 +53,14 @@ You can use the **Playground** section to explore the data.
 
 You can start by creating these in **Playground**, and then using the **Add to Entity** option.
 
-1. CreateAdd a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
-1. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.review_month)`.
-1. Add an `avg_reviews_by_month` metric of type `number` to the `detailed_reviews` entity, with the definition `AVG(detailed_reviews.reviews_by_month`.
-1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description`: `Use this metric whenever asked about average reviews per month`
+1. Go to the `detailed_reviews` entity, add an **Attribute** named `review_month`, of type `date`
+   with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`, and add it.
+1. Go to the `detailed_reviews` entity, add an **Metric** named `reviews_by_month`, of type `number`
+   with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.review_month)`, and add it.
+1. Go to the `detailed_reviews` entity, add an **Metric** named `avg_reviews_by_month`, of type `float`
+   with the definition `AVG(detailed_reviews.reviews_by_month)`, and add it.  
+1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description`:
+   `Use this metric whenever asked about average reviews per month`.
 1. Go to the `Domains` section, edit the `airbnb` domain and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
 ## Analysis
