@@ -1,0 +1,14 @@
+type: entity
+name: fact_amenities
+keys:
+  - listing_id
+  - amenity
+key_dataset: fact_amenities
+relations:
+  - rel_type: many-to-one
+    target_entity: detailed_listings
+    connection:
+      - src_field: listing_id
+        target_field: id
+    rel_join_type: left
+    cross_filtering: both
