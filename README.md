@@ -5,7 +5,7 @@
 In this session we will:
 1. Bootstrap a semantic layer in Honeydew using some pre-created Semantic Views in Snowflake.
 2. Iteratively enhance the semantic layer with additional definitions and metadata.
-3. Ask complex analytical questions and get insights from the data.
+3. Ask complex analytical questions and get insights from the data, by leveraging an agentic flow using LLMs running in Cortex.
 4. See how the same semantic layer can be used in BI tools.
 
 ## Setup
@@ -55,17 +55,36 @@ You can start by creating these in **Playground**, and then using the **Add to E
 
 1. Go to the `detailed_reviews` entity, add an **Attribute** named `review_month`, of type `date`
    with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`, and add it.
+   Explanation: we want to use this attribute to group metrics by month.
+   
 1. Go to the `detailed_reviews` entity, add an **Metric** named `reviews_by_month`, of type `number`
    with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.review_month)`, and add it.
+   Explanation: we want to use this metric to calculate number of reviews per month.
+   
 1. Go to the `detailed_reviews` entity, add an **Metric** named `avg_reviews_by_month`, of type `float`
-   with the definition `AVG(detailed_reviews.reviews_by_month)`, and add it.  
-1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description`:
+   with the definition `AVG(detailed_reviews.reviews_by_month)`, and add it.
+   Explanation: this is a complex composite metric that can aggregate on top of the previous metric.
+   
+1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description` (click the `Edit` button):
+   
    `Use this metric whenever asked about average reviews per month`.
-1. Go to the `Domains` section, edit the `airbnb` domain and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
-## Analysis
+   This will ensure that the AI know how and when to use this metric.
+   
+1. Go to the `Domains` section, edit the `airbnb` domain (using the `Edit` button on the right)
+   and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
-**Important**: Use the selector on top, to choose the Airbnb domain, before you start to ask questions.
+   Explanation: We are curating the context of what the AI Analyst can use from the schema.
+   It will only use items included in the domain.
+   
+
+## Deep Analysis
+
+1. Navigate to the **Analyst** section.
+1. **Important**: Use the selector on top, to choose the Airbnb domain, before you start to ask questions.
+1. In the questions box, type in your question. You can ask follow-up questions as part of the conversation.
+
+### Questions flow
 
 1. What is the monthly number of reviews in the last 7 years?
 2. Was there any anomaly? Can you explain it?
@@ -74,7 +93,7 @@ You can start by creating these in **Playground**, and then using the **Add to E
 5. Were there any specific segments of listings that were impacted more than others?
 
 
-## Additional Sample questions
+### Additional Sample questions
 
 1. Do superhosts get higher rating? Does it change per city?
 2. Are superhosts more successful, and why?
