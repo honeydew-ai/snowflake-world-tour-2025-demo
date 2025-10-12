@@ -8,9 +8,6 @@ In this session we will:
 3. Ask complex analytical questions and get insights from the data.
 4. See how the same semantic layer can be used in BI tools.
 
-## DISCLAIMER:
-The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.com/) website, under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
 ## Setup
 
 1. Signup to the Honeydew demo environment at https://demo.honeydew.cloud/signup
@@ -52,3 +49,7 @@ The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.co
 ## Resources
 
 During the session you can use the [Honeydew Documentation](https://honeydew.ai/docs/introduction)
+
+
+## DISCLAIMER:
+The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.com/) website, under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
