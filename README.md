@@ -50,8 +50,7 @@ In this session we will:
 
 You can use the **Playground** section to explore the data.
 
-<img width="181" height="254" alt="image" src="https://github.com/user-attachments/assets/e25155b3-c59f-4435-bcde-6d9848449683" />
-
+<img width="163" height="257" alt="image" src="https://github.com/user-attachments/assets/5c194fb7-a05a-40b4-afce-fe39398b273a" />
 
 ### Create additional semantic definitions
 
