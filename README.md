@@ -24,9 +24,8 @@ In this session we will:
 
 1. We are analyzing a schema of Airbnb listings and reviews.
 2. The full data is available until the end of June 2025.
-
-### DISCLAIMER:
-The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.com/) website, and is used under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+3. DISCLAIMER:
+   The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.com/) website, and is used under the    [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 
 ## Semantic modeling flow
