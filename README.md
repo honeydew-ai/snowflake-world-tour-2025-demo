@@ -38,12 +38,17 @@ In this session we will:
 1. Add the semantic view `AIRBNB` and click `Import`.
 
 ### Review data
-1. What entities exist in the data?
-2. What fields?
-3. What is the time range of the fields?
-4. What values do certain fields have? How can we slice and dice the data?
+1. What entities exist in the data? How are they connected to each other?
+   Hint: use the graph visualization for the entities and the relationships.
+3. What fields exist?
+4. What is the time range of the fields?
+5. What values do certain fields have? How can we slice and dice the data?
+
+You can use the **Playground** section to explore the data.
 
 ### Create additional semantic definitions
+
+You can start by creating these in **Playground**, and then using the **Add to Entity** option.
 
 1. Add a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
 1. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.month)`.
