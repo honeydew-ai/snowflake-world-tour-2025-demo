@@ -27,8 +27,11 @@ In this session we will:
 ## Semantic modeling flow
 
 1. Create a new branch, give it a unique name.
+   In Honeydew, users operate on branches when making changes to the semantic layer, and then can merge them to the `prod` version.
 
-1. Add the semantic view `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO.AIRBNB`
+1. Use `Import` and choose **Semantic View** option.
+1. Choose the `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO` schema.
+1. Add the semantic view `AIRBNB` and click `Import`.
 
 1. Add a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
 1. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.month)`.
