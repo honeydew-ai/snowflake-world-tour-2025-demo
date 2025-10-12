@@ -28,7 +28,7 @@ In this session we will:
 2. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.month)`.
 3. Add an `avg_reviews_by_month` metric of type `number` to the `detailed_reviews` entity, with the definition `AVG(detailed_reviews.reviews_by_month`.
 4. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description`: `Use this metric whenever asked about average reviews per month`
-5. Go to the `airbnb` domain and add the newly created `month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
+5. Go to the `airbnb` domain and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
 ## Analysis
 
