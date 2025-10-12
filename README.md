@@ -32,7 +32,7 @@ In this session we will:
 
 ## Analysis
 
-1. What is the monthly number of reviews in the last 5 years?
+1. What is the monthly number of reviews in the last 7 years?
 2. Was there any anomaly? Can you explain it?
 3. Can you focus on 2020-2022 and break it down by cities?
 4. Can you explain why certain cities were impacted more than others?
