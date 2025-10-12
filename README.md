@@ -8,6 +8,9 @@ In this session we will:
 3. Ask complex analytical questions and get insights from the data.
 4. See how the same semantic layer can be used in BI tools.
 
+## DISCLAIMER:
+The data used in this lab was taken from [Inside Airbnb](https://insideairbnb.com/) website, under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
 ## Setup
 
 1. Signup to the Honeydew demo environment at https://demo.honeydew.cloud/signup
@@ -24,9 +27,10 @@ In this session we will:
 
 1. Add the semantic view `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO.AIRBNB`
 
-1. Add a `month` attribute of type `date` to the `detailed_reviews` entity, with the definition `MONTH(detailed_reviews.date)`
+1. Add a `month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`
 2. Add a `reviews_by_month` metric, of type `number` to the `detailed_reviews` entity, with the definition `detailed_reviews.count GROUP BY (detailed_reviews.month)`
 3. Add an `avg_reviews_by_month` metric of type `number` to the `detailed_reviews` entity, with the definition `AVG(detailed_reviews.reviews_by_month`
+4. Go to the `airbnb` domain and add the newly created `month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
 ## Analysis
 
