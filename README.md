@@ -56,29 +56,29 @@ Note: either follow the following instructions or create these in **Playground**
 
 1. Go to the `detailed_reviews` entity, add an **Attribute** named `review_month`, of type `date`
    with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`, and add it.
+
    Explanation: we want to use this attribute to group metrics by month.
    
 1. Go to the `detailed_reviews` entity, add an **Metric** named `reviews_by_month`, of type `number`
    with the definition `detailed_reviews.count GROUP BY (*, detailed_reviews.review_month)`, and add it.
+
    Explanation: we want to use this metric to calculate number of reviews per month.
    
 1. Go to the `detailed_reviews` entity, add an **Metric** named `avg_reviews_by_month`, of type `float`
-   with the definition `AVG(detailed_reviews.reviews_by_month)`, and add it.
-   Explanation: this is a complex composite metric that can aggregate on top of the previous metric.
-   
-1. Go to the `avg_reviews_by_month` metric's `Advanced` tab, and add the following to the `AI Description` (click the `Edit` button):
-   
-   `Use this metric whenever asked about average reviews per month`.
+   with the definition `AVG(detailed_reviews.reviews_by_month)`.
+   Set the description to `Use this metric whenever asked about average reviews per month`, and add the metric.
 
-   This will ensure that the AI know how and when to use this metric.
-   
+   Explanation: this is a complex composite metric that can aggregate on top of the previous metric.
+     
 1. Go to the `Domains` section, edit the `airbnb` domain (using the `Edit` button on the right)
    and add the newly created `review_month`, `reviews_by_month` and `avg_reviews_by_month` fields to it.
 
    Explanation: We are curating the context of what the AI Analyst can use from the schema.
    It will only use items included in the domain.
-   
 
+1. Explore the description of the domain. It can be used to provide additional guidelines to the ai.
+   You can later on experiment by changing it and seeing how that affects the AI answers.
+   
 ## Deep Analysis
 
 1. Navigate to the **Analyst** section.
