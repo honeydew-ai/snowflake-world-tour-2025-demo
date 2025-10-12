@@ -37,6 +37,12 @@ In this session we will:
 1. Choose the `HONEYDEW_SWT_DEMO.HONEYDEW_SWT_DEMO` schema.
 1. Add the semantic view `AIRBNB` and click `Import`.
 
+### Review data
+1. What entities exist in the data?
+2. What fields?
+3. What is the time range of the fields?
+4. What values do certain fields have? How can we slice and dice the data?
+
 ### Create additional semantic definitions
 
 1. Add a `review_month` attribute of type `date` to the `detailed_reviews` entity, with the definition `DATE_TRUNC(MONTH, detailed_reviews.date)`.
