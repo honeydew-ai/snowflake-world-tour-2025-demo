@@ -1,0 +1,109 @@
+type: domain
+name: airbnb
+description: >-
+
+  Airbnb data for over 210k listings in 13 major cities, including information
+  about hosts, pricing, location, and room type, along with over 5 million
+  historical reviews.
+
+  Reviews are also considered visits / bookings. NOTICE: Full data is only
+  available till end of June 2025, data coming afterwards is incomplete.
+labels: []
+filters: []
+source_filters: []
+entities:
+  - name: detailed_listings
+    fields:
+      - name: accommodates
+      - name: bathrooms
+      - name: bedrooms
+      - name: beds
+      - name: calculated_host_listings_count
+      - name: host_id
+      - name: id
+      - name: latitude
+      - name: longitude
+      - name: maximum_nights
+      - name: maximum_nights_avg_ntm
+      - name: minimum_nights
+      - name: minimum_nights_avg_ntm
+      - name: amenities
+      - name: bathrooms_text
+      - name: description
+      - name: instant_bookable
+      - name: listing_city
+      - name: name
+      - name: neighborhood_overview
+      - name: neighbourhood
+      - name: neighbourhood_cleansed
+      - name: neighbourhood_group_cleansed
+      - name: price
+      - name: price_clean
+      - name: property_type
+      - name: room_type
+      - name: count
+  - name: detailed_reviews
+    fields:
+      - name: id
+      - name: listing_id
+      - name: reviewer_id
+      - name: comments
+      - name: date
+      - name: reviewer_name
+      - name: count
+      - name: review_month
+      - name: avg_reviews_by_month
+      - name: reviews_by_month
+  - name: dim_host
+    fields:
+      - name: host_id
+      - name: host_listings_count
+      - name: host_total_listings_count
+      - name: host_about
+      - name: host_acceptance_rate
+      - name: host_city
+      - name: host_country
+      - name: host_has_profile_pic
+      - name: host_identity_verified
+      - name: host_is_superhost
+      - name: host_location_free_text
+      - name: host_name
+      - name: host_neighbourhood
+      - name: host_picture_url
+      - name: host_region
+      - name: host_response_rate
+      - name: host_response_time
+      - name: host_since
+      - name: host_thumbnail_url
+      - name: host_url
+      - name: host_verifications
+      - name: count
+  - name: dim_listings_review
+    fields:
+      - name: listing_id
+      - name: number_of_reviews
+      - name: number_of_reviews_l30d
+      - name: number_of_reviews_ltm
+      - name: number_of_reviews_ly
+      - name: review_scores_accuracy
+      - name: review_scores_checkin
+      - name: review_scores_cleanliness
+      - name: review_scores_communication
+      - name: review_scores_location
+      - name: review_scores_rating
+      - name: review_scores_value
+      - name: first_review
+      - name: last_review
+      - name: count
+  - name: dim_reviewer
+    fields:
+      - name: number_of_reviews
+      - name: reviewer_id
+      - name: first_review
+      - name: last_review
+      - name: count
+  - name: fact_amenities
+    fields:
+      - name: listing_id
+      - name: amenity
+      - name: count
