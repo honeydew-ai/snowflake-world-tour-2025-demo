@@ -107,3 +107,9 @@ entities:
       - name: listing_id
       - name: amenity
       - name: count
+  - name: currency_for_city
+    fields:
+      - name: local_currency_to_eur
+      - name: city
+      - name: local_currency_to_usd
+      - name: local_currency
