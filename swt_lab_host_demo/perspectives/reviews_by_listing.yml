@@ -1,0 +1,12 @@
+type: perspective
+name: reviews_by_listing
+owner: baruch+swtadmin@honeydew.ai
+labels: []
+attributes:
+  - |
+    detailed_listings.name
+metrics:
+  - |
+    detailed_reviews.count
+filters: []
+domain: airbnb
