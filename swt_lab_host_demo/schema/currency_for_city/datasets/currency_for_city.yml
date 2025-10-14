@@ -1,0 +1,19 @@
+type: dataset
+entity: currency_for_city
+name: currency_for_city
+sql: |-
+  SWT_DATA.AIRBNB.CURRENCY_FOR_CITY
+dataset_type: table
+attributes:
+  - column: LOCAL_CURRENCY_TO_EUR
+    name: local_currency_to_eur
+    datatype: float
+  - column: CITY
+    name: city
+    datatype: string
+  - column: LOCAL_CURRENCY_TO_USD
+    name: local_currency_to_usd
+    datatype: float
+  - column: LOCAL_CURRENCY
+    name: local_currency
+    datatype: string

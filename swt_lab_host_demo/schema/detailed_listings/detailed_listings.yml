@@ -5,6 +5,13 @@ keys:
 key_dataset: detailed_listings
 relations:
   - rel_type: many-to-one
+    target_entity: currency_for_city
+    connection:
+      - src_field: listing_city
+        target_field: city
+    rel_join_type: left
+    cross_filtering: both
+  - rel_type: many-to-one
     target_entity: dim_host
     connection:
       - src_field: host_id
