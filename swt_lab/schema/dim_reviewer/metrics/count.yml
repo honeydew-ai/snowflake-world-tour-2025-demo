@@ -1,0 +1,7 @@
+type: metric
+sql: |-
+  count(*)
+entity: dim_reviewer
+name: count
+datatype: number
+rollup: sum

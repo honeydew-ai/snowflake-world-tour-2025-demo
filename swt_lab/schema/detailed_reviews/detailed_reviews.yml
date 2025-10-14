@@ -1,0 +1,21 @@
+type: entity
+name: detailed_reviews
+keys:
+  - id
+  - listing_id
+key_dataset: detailed_reviews
+relations:
+  - rel_type: many-to-one
+    target_entity: detailed_listings
+    connection:
+      - src_field: listing_id
+        target_field: id
+    rel_join_type: left
+    cross_filtering: both
+  - rel_type: many-to-one
+    target_entity: dim_reviewer
+    connection:
+      - src_field: reviewer_id
+        target_field: reviewer_id
+    rel_join_type: left
+    cross_filtering: both
