@@ -1,0 +1,7 @@
+type: metric
+sql: |-
+  count(*)
+entity: fact_amenities
+name: count
+datatype: number
+rollup: sum
