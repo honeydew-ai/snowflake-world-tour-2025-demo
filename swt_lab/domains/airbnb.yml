@@ -12,48 +12,6 @@ labels: []
 filters: []
 source_filters: []
 entities:
-  - name: detailed_listings
-    fields:
-      - name: accommodates
-      - name: bathrooms
-      - name: bedrooms
-      - name: beds
-      - name: calculated_host_listings_count
-      - name: host_id
-      - name: id
-      - name: latitude
-      - name: longitude
-      - name: maximum_nights
-      - name: maximum_nights_avg_ntm
-      - name: minimum_nights
-      - name: minimum_nights_avg_ntm
-      - name: amenities
-      - name: bathrooms_text
-      - name: description
-      - name: instant_bookable
-      - name: listing_city
-      - name: name
-      - name: neighborhood_overview
-      - name: neighbourhood
-      - name: neighbourhood_cleansed
-      - name: neighbourhood_group_cleansed
-      - name: price
-      - name: price_clean
-      - name: property_type
-      - name: room_type
-      - name: count
-  - name: detailed_reviews
-    fields:
-      - name: id
-      - name: listing_id
-      - name: reviewer_id
-      - name: comments
-      - name: date
-      - name: reviewer_name
-      - name: count
-      - name: reviews_per_month
-      - name: avg_reviews_by_month
-      - name: review_month
   - name: dim_host
     fields:
       - name: host_id
@@ -108,3 +66,5 @@ entities:
       - name: amenity
       - name: count
   - name: currency_for_city
+  - name: detailed_reviews
+  - name: detailed_listings
