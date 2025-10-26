@@ -1,5 +1,0 @@
-type: entity
-name: dim_host
-keys:
-  - host_id
-key_dataset: dim_host

@@ -1,8 +1,0 @@
-type: metric
-entity: detailed_reviews
-name: reviews_by_month
-owner: baruch+swtadmin@honeydew.ai
-datatype: number
-labels: []
-sql: |-
-  detailed_reviews.count GROUP BY (*, detailed_reviews.review_month)

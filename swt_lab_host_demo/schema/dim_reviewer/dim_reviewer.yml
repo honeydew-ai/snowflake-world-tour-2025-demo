@@ -1,5 +1,0 @@
-type: entity
-name: dim_reviewer
-keys:
-  - reviewer_id
-key_dataset: dim_reviewer

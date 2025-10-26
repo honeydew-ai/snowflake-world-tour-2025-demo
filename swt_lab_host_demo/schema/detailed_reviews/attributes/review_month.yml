@@ -1,8 +1,0 @@
-type: calculated_attribute
-entity: detailed_reviews
-name: review_month
-owner: baruch+swtadmin@honeydew.ai
-datatype: date
-labels: []
-sql: |-
-  DATE_TRUNC(MONTH, detailed_reviews.date)

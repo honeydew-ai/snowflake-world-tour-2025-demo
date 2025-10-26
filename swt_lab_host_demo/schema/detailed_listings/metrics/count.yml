@@ -1,7 +1,0 @@
-type: metric
-sql: |-
-  count(*)
-entity: detailed_listings
-name: count
-datatype: number
-rollup: sum

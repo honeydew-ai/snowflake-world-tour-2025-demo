@@ -1,8 +1,13 @@
 type: domain
 name: airbnb
-description: |-
-  Airbnb data for over 210k listings in 13 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews.
-  Reviews are also considered visits / bookings. NOTICE: Full data is only available till end of June 2025, data coming afterwards is incomplete.
+description: >-
+
+  Airbnb data for over 210k listings in 13 major cities, including information
+  about hosts, pricing, location, and room type, along with over 5 million
+  historical reviews.
+
+  Reviews are also considered visits / bookings. NOTICE: Full data is only
+  available till end of June 2025, data coming afterwards is incomplete.
 labels: []
 filters: []
 source_filters: []
