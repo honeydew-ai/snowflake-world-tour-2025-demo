@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: detailed_reviews
+name: review_month
+owner: tungdinh2821995@gmail.com
+datatype: date
+labels: []
+sql: |-
+  DATE_TRUNC(month, detailed_reviews.date)
