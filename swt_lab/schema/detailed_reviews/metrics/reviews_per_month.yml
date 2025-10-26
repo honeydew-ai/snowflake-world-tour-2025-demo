@@ -1,0 +1,8 @@
+type: metric
+entity: detailed_reviews
+name: reviews_per_month
+owner: tungdinh2821995@gmail.com
+datatype: number
+labels: []
+sql: |-
+  detailed_reviews.count group by (*, detailed_reviews.review_month)
