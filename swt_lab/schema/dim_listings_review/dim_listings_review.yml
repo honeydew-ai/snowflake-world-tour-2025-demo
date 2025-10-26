@@ -1,0 +1,5 @@
+type: entity
+name: dim_listings_review
+keys:
+  - listing_id
+key_dataset: dim_listings_review
