@@ -1,0 +1,12 @@
+type: domain
+name: currencies
+labels: []
+filters: []
+source_filters: []
+entities:
+  - name: currency_for_city
+    fields:
+      - name: local_currency_to_eur
+      - name: local_currency_to_usd
+      - name: city
+      - name: local_currency
