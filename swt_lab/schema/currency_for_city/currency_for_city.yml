@@ -3,3 +3,11 @@ name: currency_for_city
 keys:
   - city
 key_dataset: currency_for_city
+relations:
+  - target_entity: detailed_listings
+    rel_type: one-to-many
+    rel_join_type: inner
+    cross_filtering: both
+    connection:
+      - src_field: city
+        target_field: listing_city
